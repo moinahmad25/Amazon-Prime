@@ -1,0 +1,324 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #051c28;
+    --secondary-color: #0f79af;
+    --nav-color: rgb(212, 212, 212);
+    --font-color-white: white;
+    --font-color-black: black;
+}
+header{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--main-color);
+    color: var(--nav-color);
+    position: sticky;
+    top: 0;
+    z-index: 1233222;
+}
+.bar{
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+.left-navbar{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 120px;
+}
+.nav{
+    display: flex;
+}
+.navlist{
+    font-size: 18px;
+    margin: 0 10px;
+}
+.navlinks{
+    color: var(--nav-color);
+    transition: 250ms;
+}
+.navlinks:hover{
+    color: #47bdf8;
+}
+.center{
+    display: flex;
+    /* height: 3rem; */
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.right-navbar{
+    display: flex;
+    width: 35%;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--nav-color);
+    position: relative;
+}
+.btn{
+    border: none;
+    border-radius: 3px;
+    color: var(--nav-color);
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    transition: 250ms;
+}
+.btn:hover{
+    background-color: #a8e1fe;
+    color: var(--main-color);
+}
+::placeholder{
+    font-weight: 600;
+    font-size: 16px;
+}
+.search-logo{
+    margin:0 20px;
+    cursor: pointer;
+    transition: 250ms;
+}
+.search-logo:hover{
+    color: #47bdf8;
+}
+.language{
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    margin: 0 10px;
+    transition: 250ms;
+    cursor: pointer;
+}
+.language:hover{
+    color: #47bdf8;
+}
+.world{
+    width: 22px;
+}
+.lang{
+    font-size: 20px;
+    margin: 0 3px 0 8px;
+    cursor: pointer;
+}
+.fi{
+    font-size: 20px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 300ms;
+}
+.user:hover{
+    color: #47bdf8;
+}
+.fi-rr-user{
+    margin:0 5px 0 8px;
+}
+.fi-rr-caret-down{
+    font-size: 12px;
+    color: #8e9ea6;
+    margin-top: 3px;
+    margin-left: -1px;
+}
+.content1{
+    height: 28rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    background: url('./Assets/Poster\ 1.jpg');
+    background-size: cover;
+    background-repeat: none;
+    box-shadow: inset 800px 0 150px black;
+    padding: 100px;
+    color: var(--font-color-white);
+}
+.welcome{
+    font-weight: 300;
+    font-size: 50px;
+}
+.description{
+    width: 700px;
+    margin: 30px 0 20px 0;
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.sign-in{
+    padding: 16px 100px;
+    font-size: 18px;
+    color: var(--font-color-white);
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: all 300ms ease-in-out;
+}
+.sign-in:hover{
+    border-radius: 10px 20px;
+}
+.content2{
+    height: 28rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    background: url('./Assets/Poster\ 2.jpeg');
+    background-size: contain;
+    background-repeat: none;
+    box-shadow: inset -800px 0 150px black;
+    padding: 100px;
+    color: var(--font-color-white);
+    text-align:right;
+}
+.description1{
+    /* width: 700px; */
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.rent{
+    padding: 16px 100px;
+    font-size: 18px;
+    color: var(--font-color-white);
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    margin-right: 23%;
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+    transition: all 300ms ease-in-out;
+}
+.rent:hover{
+    border-radius: 20px 10px;
+}
+.content3{
+    width: 100%;
+    height: 43rem;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+.favorite{
+    margin: 40px 40px 0 50px;
+}
+.title{
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 45px;
+}
+.dscrptn{
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 350;
+    letter-spacing: 1px;
+}
+.channels{
+    width: 50%;
+    height: 100%;
+    margin-top: 8px;
+}
+.channel{
+    height: 155px;
+    margin: 2px;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+.channel:hover{
+    box-shadow: -3px 2px 6px 3px rgb(53, 53, 53);
+}
+.content4{
+    height: 28rem;
+    width: 100%;
+    border: 1px solid black;
+    margin-top: -20px;
+    display: flex;
+    /* background-color: black; */
+}
+.remote-img{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    /* background: url('./Remote.png');
+    background-repeat: no-repeat;
+    background-size: 700px ;
+    background-size: contain; */
+    box-shadow:inset 9px 10px 270px 190px;
+}
+.remote{
+    width: 700px;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+    filter: drop-shadow(3rem 1rem 0.5rem rgb(0, 0, 0));
+    /* box-shadow: 100px 20px 100px 50px; */
+}
+.after-content{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    color: var(--font-color-white);
+}
+.welcome1{
+    font-weight: 500;
+    font-size: 45px;
+    margin-top: 70px;
+}
+.content5{
+    height: 28rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    background: linear-gradient(-20deg, rgb(78, 78, 78), black);
+    box-shadow: inset 800px 0 150px black;
+    padding: 100px;
+    color: var(--font-color-white);
+    display: flex;
+}
+.righty{
+    height: 21.8rem;
+    display: flex;
+    align-items: flex-end;
+}
+.poster{
+    filter: drop-shadow(-4rem 0 2rem black);
+}
+footer{
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    text-align: center;
+}
+.foot-bar{
+    display: flex;
+}
+.footlist{
+    
+    margin: 0 20px;
+}
+.list{
+    color: #0c638f;
+    transition: 200ms;
+}
+.list:hover{
+    color: #15adf9;
+}
+.cpywrt{
+    margin-top: 10px;
+    color: rgb(112, 112, 112);
+}
